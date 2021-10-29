@@ -1,12 +1,11 @@
 package io.khasang.seabattletwo;
 
-public class SeaBattlePlain {
+public class SeaBattleMain {
     public static void main(String[] args) {
         Field field = new Field();
         Player player = new Player();
-        Ship ship = new Ship(4);
         field.init();
-        field.setShip(ship);
+        field.setShip();
         System.out.println("Game start");
         do {
             field.show();
